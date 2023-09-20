@@ -42,7 +42,7 @@ class LauncherActivity : BaseActivity() {
     lateinit var appPreferences: AppPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        // Mandatory to call this before super method to show system launch screen for api level 31+
+        // Mandatory to call this before super method to show system launch screen for api level 31+ ok
         installSplashScreen()
 
         super.onCreate(savedInstanceState)
