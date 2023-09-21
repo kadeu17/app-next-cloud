@@ -542,15 +542,21 @@ public class AuthenticatorActivity extends AccountAuthenticatorActivity
      */
     private void initOverallUi() {
 
-        // texto do campo hostUrlInput com a URL da drops2africa ...................
+        // Texto do campo hostUrlInput com a URL da drops2africa ......................................................................
         if (accountSetupBinding != null) {
             accountSetupBinding.hostUrlInput.setText("https://drops2africa.com/app");
         }
 
+        // Oculta o campo de input
+        if (accountSetupBinding != null) {
+            accountSetupBinding.hostUrlInput.setVisibility(View.GONE);
+        }
+
+
         accountSetupBinding.hostUrlContainer.setEndIconOnClickListener(v -> checkOcServer());
 
-        accountSetupBinding.hostUrlInputHelperText.setText(
-            String.format(getString(R.string.login_url_helper_text), getString(R.string.app_name)));
+       // accountSetupBinding.hostUrlInputHelperText.setText(
+          //  String.format(getString(R.string.login_url_helper_text), getString(R.string.app_name)));
 
         viewThemeUtils.platform.colorTextView(accountSetupBinding.hostUrlInputHelperText, ColorRole.ON_PRIMARY);
         viewThemeUtils.platform.colorTextView(accountSetupBinding.serverStatusText, ColorRole.ON_PRIMARY);
@@ -558,12 +564,15 @@ public class AuthenticatorActivity extends AccountAuthenticatorActivity
         viewThemeUtils.material.colorTextInputLayout(accountSetupBinding.hostUrlContainer, ColorRole.ON_PRIMARY);
         viewThemeUtils.platform.colorEditTextOnPrimary(accountSetupBinding.hostUrlInput);
 
-        if (deviceInfo.hasCamera(this)) {
+      /*  if (deviceInfo.hasCamera(this)) {
             accountSetupBinding.scanQr.setOnClickListener(v -> onScan());
             viewThemeUtils.platform.tintDrawable(this, accountSetupBinding.scanQr.getDrawable(), ColorRole.ON_PRIMARY);
         } else {
             accountSetupBinding.scanQr.setVisibility(View.GONE);
-        }
+        }*/
+
+        // Chama a função para verificar o servidor automaticamente
+        checkOcServer();
     }
 
     /**
@@ -795,11 +804,11 @@ public class AuthenticatorActivity extends AccountAuthenticatorActivity
                 Log_OC.e(TAG, "Error converting internationalized domain name " + uri, ex);
             }
 
-            if (accountSetupBinding != null) {
+           /* if (accountSetupBinding != null) {
                 mServerStatusText = getResources().getString(R.string.auth_testing_connection);
                 mServerStatusIcon = R.drawable.progress_small;
                 showServerStatus();
-            }
+            }*/
 
             // TODO maybe do this via async task
             Intent getServerInfoIntent = new Intent();
@@ -813,6 +822,15 @@ public class AuthenticatorActivity extends AccountAuthenticatorActivity
                 Log_OC.e(TAG, "Server check tried with OperationService unbound!");
             }
 
+        }
+
+        showScreen();
+    }
+
+    private void showScreen() {
+        // Torna a tela visível
+        if (getWindow() != null) {
+            getWindow().getDecorView().setVisibility(View.VISIBLE);
         }
     }
 
