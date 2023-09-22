@@ -559,8 +559,8 @@ public class AuthenticatorActivity extends AccountAuthenticatorActivity
           //  String.format(getString(R.string.login_url_helper_text), getString(R.string.app_name)));
 
         viewThemeUtils.platform.colorTextView(accountSetupBinding.hostUrlInputHelperText, ColorRole.ON_PRIMARY);
-        viewThemeUtils.platform.colorTextView(accountSetupBinding.serverStatusText, ColorRole.ON_PRIMARY);
-        viewThemeUtils.platform.colorTextView(accountSetupBinding.authStatusText, ColorRole.ON_PRIMARY);
+        viewThemeUtils.platform.colorTextView(accountSetupBinding.serverStatusText);
+        viewThemeUtils.platform.colorTextView(accountSetupBinding.authStatusText);
         viewThemeUtils.material.colorTextInputLayout(accountSetupBinding.hostUrlContainer, ColorRole.ON_PRIMARY);
         viewThemeUtils.platform.colorEditTextOnPrimary(accountSetupBinding.hostUrlInput);
 
@@ -804,11 +804,11 @@ public class AuthenticatorActivity extends AccountAuthenticatorActivity
                 Log_OC.e(TAG, "Error converting internationalized domain name " + uri, ex);
             }
 
-           /* if (accountSetupBinding != null) {
+            if (accountSetupBinding != null) {
                 mServerStatusText = getResources().getString(R.string.auth_testing_connection);
-                mServerStatusIcon = R.drawable.progress_small;
+                //mServerStatusIcon = R.drawable.progress_small;
                 showServerStatus();
-            }*/
+            }
 
             // TODO maybe do this via async task
             Intent getServerInfoIntent = new Intent();

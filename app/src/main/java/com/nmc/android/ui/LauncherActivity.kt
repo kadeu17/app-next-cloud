@@ -47,8 +47,8 @@ class LauncherActivity : BaseActivity() {
         binding = ActivitySplashBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
-        updateTitleVisibility()
-        scheduleSplashScreen()
+        //updateTitleVisibility()
+        //scheduleSplashScreen()
     }
 
     private fun updateTitleVisibility() {
