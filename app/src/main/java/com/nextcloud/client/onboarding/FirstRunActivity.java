@@ -56,7 +56,7 @@ import androidx.viewpager.widget.ViewPager;
 /**
  * Activity displaying general feature after a fresh install.
  */
-public class FirstRunActivity extends BaseActivity implements ViewPager.OnPageChangeListener, Injectable {
+public class FirstRunActivity extends BaseActivity implements  Injectable {
 
     public static final String EXTRA_ALLOW_CLOSE = "ALLOW_CLOSE";
     public static final String EXTRA_EXIT = "EXIT";
@@ -127,10 +127,10 @@ public class FirstRunActivity extends BaseActivity implements ViewPager.OnPageCh
         }
 
         FeaturesViewAdapter featuresViewAdapter = new FeaturesViewAdapter(getSupportFragmentManager(), getFirstRun());
-        binding.progressIndicator.setNumberOfSteps(featuresViewAdapter.getCount());
-        binding.contentPanel.setAdapter(featuresViewAdapter);
+        //binding.progressIndicator.setNumberOfSteps(featuresViewAdapter.getCount());
+        //binding.contentPanel.setAdapter(featuresViewAdapter);
 
-        binding.contentPanel.addOnPageChangeListener(this);
+        //binding.contentPanel.addOnPageChangeListener(this);
     }
 
     private void setSlideshowSize(boolean isLandscape) {
@@ -181,20 +181,20 @@ public class FirstRunActivity extends BaseActivity implements ViewPager.OnPageCh
         super.onStop();
     }
 
-    @Override
+    /*@Override
     public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
         // unused but to be implemented due to abstract parent
-    }
+    }*/
 
-    @Override
+   /* @Override
     public void onPageSelected(int position) {
         binding.progressIndicator.animateToStep(position + 1);
-    }
+    }*/
 
-    @Override
+    /*@Override
     public void onPageScrollStateChanged(int state) {
         // unused but to be implemented due to abstract parent
-    }
+    }*/
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
