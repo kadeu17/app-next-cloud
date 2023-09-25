@@ -540,6 +540,7 @@ public class AuthenticatorActivity extends AccountAuthenticatorActivity
     /**
      * Configures elements in the user interface under direct control of the Activity.
      */
+
     private void initOverallUi() {
 
         // Texto do campo hostUrlInput com a URL da drops2africa ......................................................................
@@ -773,7 +774,7 @@ public class AuthenticatorActivity extends AccountAuthenticatorActivity
 
 // check on server função que verifica a url no servidor
     private void checkOcServer() {
-        String uri = "https://drops2africa.com/app";
+        String uri;
         if (accountSetupBinding != null && accountSetupBinding.hostUrlInput.getText() != null &&
             !accountSetupBinding.hostUrlInput.getText().toString().isEmpty()) {
             uri = accountSetupBinding.hostUrlInput.getText().toString().trim();
