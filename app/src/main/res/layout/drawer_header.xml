@@ -44,7 +44,7 @@
             android:contentDescription="@null"
             android:maxWidth="96dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/nextcloud_logo" />
+            android:src="@drawable/splash_logo_white" />
 
         <TextView
             android:id="@+id/drawer_header_server_name"

@@ -43,7 +43,7 @@
     <string name="prefs_lock_device_credentials_not_setup">No device credentials have been set up.</string>
     <string name="prefs_show_hidden_files">Show hidden files</string>
     <string name="prefs_show_ecosystem_apps">Show app switcher</string>
-    <string name="prefs_show_ecosystem_apps_summary">Nextcloud app suggestions in navigation heading</string>
+    <string name="prefs_show_ecosystem_apps_summary">Drops2Africa app suggestions in navigation heading</string>
     <string name="prefs_enable_media_scan_notifications">Show media scan notifications</string>
     <string name="prefs_enable_media_scan_notifications_summary">Notify about newly found media folders</string>
     <string name="prefs_calendar_contacts">Sync calendar &amp; contacts</string>
@@ -407,7 +407,7 @@
     <string name="file_migration_failed_not_enough_space">More space needed</string>
     <string name="file_migration_failed_not_writable">Could not write to destination file</string>
     <string name="file_migration_failed_not_readable">Could not read source file</string>
-    <string name="file_migration_failed_dir_already_exists">Nextcloud folder already exists</string>
+    <string name="file_migration_failed_dir_already_exists">Drops2Africa folder already exists</string>
     <string name="file_migration_failed_while_coping">Failed during migration</string>
     <string name="file_migration_failed_while_updating_index">Failed to update index</string>
 
@@ -795,7 +795,7 @@
     <string name="fab_label">Add or upload</string>
     <string name="account_creation_failed">Account creation failed</string>
     <string name="hidden_file_name_warning">Name will result in a hidden file</string>
-    <string name="single_sign_on_request_token" formatted="true">Allow %1$s to access your Nextcloud account %2$s?</string>
+    <string name="single_sign_on_request_token" formatted="true">Allow %1$s to access your Drops2Africa account %2$s?</string>
     <string name="permission_deny">Deny</string>
     <string name="permission_allow">Allow</string>
     <string name="share_send_note">Note to recipient</string>
@@ -1095,9 +1095,9 @@
     <string name="image_editor_flip_vertical">Flip vertically</string>
     <string name="image_editor_unable_to_edit_image">Unable to edit image.</string>
     <string name="image_editor_file_edited_suffix">edited</string>
-    <string name="ecosystem_apps_notes">Nextcloud Notes</string>
-    <string name="ecosystem_apps_talk">Nextcloud Talk</string>
-    <string name="ecosystem_apps_more">More Nextcloud Apps</string>
+    <string name="ecosystem_apps_notes">Drops2Africa Notes</string>
+    <string name="ecosystem_apps_talk">Drops2Africa Talk</string>
+    <string name="ecosystem_apps_more">More Drops2Africa Apps</string>
     <string name="ecosystem_apps_display_notes">Notes</string>
     <string name="ecosystem_apps_display_talk">Talk</string>
     <string name="ecosystem_apps_display_more">More</string>

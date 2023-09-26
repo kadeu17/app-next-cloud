@@ -319,7 +319,7 @@
     <string name="file_migration_cleaning">Limpando…</string>
     <string name="file_migration_dialog_title">Atualizar a pasta de armazenamento de dados</string>
     <string name="file_migration_directory_already_exists">Pasta já existe. Escolha uma das seguintes opções:</string>
-    <string name="file_migration_failed_dir_already_exists">A pasta já existe na Nextcloud </string>
+    <string name="file_migration_failed_dir_already_exists">A pasta já existe na Drops2Africa </string>
     <string name="file_migration_failed_not_enough_space">É necessário mais espaço</string>
     <string name="file_migration_failed_not_readable">Impossível ler o ficheiro de origem</string>
     <string name="file_migration_failed_not_writable">Impossível escrever no ficheiro de destino</string>
@@ -646,7 +646,7 @@
     <string name="shared_with_you_by">Partilhado consigo por %1$s</string>
     <string name="sharee_add_failed">Adição de destinatário da partilha falhou</string>
     <string name="signup_with_provider">Registar com fornecedor</string>
-    <string name="single_sign_on_request_token" formatted="true">Permitir que %1$s aceda à sua conta Nextcloud %2$s?</string>
+    <string name="single_sign_on_request_token" formatted="true">Permitir que %1$s aceda à sua conta Drops2Africa %2$s?</string>
     <string name="sort_by">Ordenar por</string>
     <string name="sort_by_modification_date_ascending">Recentes primeiro</string>
     <string name="sort_by_modification_date_descending">Antigos primeiro</string>

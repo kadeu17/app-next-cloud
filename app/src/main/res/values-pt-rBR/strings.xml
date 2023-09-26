@@ -254,9 +254,9 @@
     <string name="ecosystem_apps_display_more">Mais</string>
     <string name="ecosystem_apps_display_notes">Notas </string>
     <string name="ecosystem_apps_display_talk">Talk</string>
-    <string name="ecosystem_apps_more">Mais aplicativos Nextcloud</string>
-    <string name="ecosystem_apps_notes">Notas Nextcloud</string>
-    <string name="ecosystem_apps_talk">Nextcloud Talk</string>
+    <string name="ecosystem_apps_more">Mais aplicativos Drops2Africa</string>
+    <string name="ecosystem_apps_notes">Notas Drops2Africa</string>
+    <string name="ecosystem_apps_talk">Drops2Africa Talk</string>
     <string name="encrypted">Definir como criptografado</string>
     <string name="end_to_end_encryption_confirm_button">Definir criptografia</string>
     <string name="end_to_end_encryption_decrypting">Descriptografando…</string>
@@ -352,7 +352,7 @@
     <string name="file_migration_cleaning">Limpando…</string>
     <string name="file_migration_dialog_title">Atualizando a pasta de armazenamento se dados</string>
     <string name="file_migration_directory_already_exists">Pasta de dados já existe. Escolha uma das seguintes:</string>
-    <string name="file_migration_failed_dir_already_exists">Pasta Nextcloud já existe</string>
+    <string name="file_migration_failed_dir_already_exists">Pasta Drops2Africa já existe</string>
     <string name="file_migration_failed_not_enough_space">Mais espaço é necessário</string>
     <string name="file_migration_failed_not_readable">Não foi possível ler o arquivo fonte</string>
     <string name="file_migration_failed_not_writable">Não foi possível gravar o arquivo de destino</string>
@@ -613,7 +613,7 @@
     <string name="prefs_remove_e2e">Remova a criptografia localmente</string>
     <string name="prefs_setup_e2e">Configurar criptografia de ponta a ponta</string>
     <string name="prefs_show_ecosystem_apps">Mostrar alternador de aplicativos</string>
-    <string name="prefs_show_ecosystem_apps_summary">Sugestões de aplicativos Nextcloud no título de navegação</string>
+    <string name="prefs_show_ecosystem_apps_summary">Sugestões de aplicativos Drops2Africa no título de navegação</string>
     <string name="prefs_show_hidden_files">Mostrar arquivos ocultos</string>
     <string name="prefs_sourcecode">Obter código-fonte</string>
     <string name="prefs_storage_path">Pasta de armazenamento de dados</string>
