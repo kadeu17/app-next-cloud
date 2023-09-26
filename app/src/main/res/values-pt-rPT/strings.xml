@@ -57,7 +57,7 @@
     <string name="auth_secure_connection">Ligação segura estabelecida</string>
     <string name="auth_ssl_general_error_title">Inicialização de SSL falhou</string>
     <string name="auth_ssl_unverified_server_title">Não possível verificar a identidade do servidor SSL</string>
-    <string name="auth_testing_connection">A testar a ligação</string>
+    <string name="auth_testing_connection">Clique na seta para começar</string>
     <string name="auth_timeout_title">O servidor demorou muito tempo a responder</string>
     <string name="auth_trying_to_login">A tentar iniciar a sessão…</string>
     <string name="auth_unauthorized">Nome de utilizador/palavra-passe errada</string>
@@ -727,7 +727,7 @@ Aproveite o novo e melhorado envio automático.</string>
     <string name="synced_folders_type">Tipo</string>
     <string name="synced_icon">Sincronizado</string>
     <string name="tags">Etiquetas</string>
-    <string name="test_server_button">Testar conexão ao servidor</string>
+    <string name="test_server_button">Teste de conexão</string>
     <string name="thirtyMinutes">30 minutos</string>
     <string name="thisWeek">Esta semana</string>
     <string name="thumbnail">Miniatura</string>

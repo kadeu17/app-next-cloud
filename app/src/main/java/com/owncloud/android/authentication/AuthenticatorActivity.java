@@ -559,7 +559,7 @@ public class AuthenticatorActivity extends AccountAuthenticatorActivity
        // accountSetupBinding.hostUrlInputHelperText.setText(
           //  String.format(getString(R.string.login_url_helper_text), getString(R.string.app_name)));
 
-        viewThemeUtils.platform.colorTextView(accountSetupBinding.hostUrlInputHelperText, ColorRole.ON_PRIMARY);
+        viewThemeUtils.platform.colorTextView(accountSetupBinding.hostUrlInputHelperText);
         viewThemeUtils.platform.colorTextView(accountSetupBinding.serverStatusText);
         viewThemeUtils.platform.colorTextView(accountSetupBinding.authStatusText);
         viewThemeUtils.material.colorTextInputLayout(accountSetupBinding.hostUrlContainer, ColorRole.ON_PRIMARY);

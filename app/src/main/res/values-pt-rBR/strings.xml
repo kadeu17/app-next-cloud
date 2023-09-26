@@ -58,7 +58,7 @@
     <string name="auth_secure_connection">Conexão segura estabelecida</string>
     <string name="auth_ssl_general_error_title">Inicialização SSL falhou</string>
     <string name="auth_ssl_unverified_server_title">Não foi possível verificar a identidade do servidor SSL</string>
-    <string name="auth_testing_connection">Testando conexão</string>
+    <string name="auth_testing_connection">Clique na seta para começar</string>
     <string name="auth_timeout_title">O servidor demorou demais para responder</string>
     <string name="auth_trying_to_login">Tentando logar…</string>
     <string name="auth_unauthorized">Nome de usuário ou senha errado</string>

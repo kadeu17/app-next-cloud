@@ -61,7 +61,7 @@
 
             <FrameLayout
                 android:id="@+id/host_url_frame"
-                android:layout_width="match_parent"
+                android:layout_width="364dp"
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -78,7 +78,7 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/host_url_input"
-                        android:layout_width="206dp"
+                        android:layout_width="212dp"
                         android:layout_height="wrap_content"
                         android:gravity="top"
                         android:importantForAutofill="no"
@@ -97,7 +97,7 @@
                 </com.google.android.material.textfield.TextInputLayout>
             </FrameLayout>
 
-            <TextView
+            <!--TextView
                 android:id="@+id/host_url_input_helper_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -107,7 +107,7 @@
                 android:paddingEnd="@dimen/standard_half_padding"
                 android:paddingBottom="@dimen/standard_eight_padding"
                 android:text="@string/login_url_helper_text"
-                android:textColor="@color/white_helper_text" />
+                android:textColor="@color/testing_connection_color" /-->
 
             <TextView
                 android:id="@+id/server_status_text"
