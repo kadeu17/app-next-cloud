@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--string name="app_name_">Drops2Africa</string-->
+
     <string name="about_android">%1$s Android app</string>
     <string name="about_version">version %1$s</string>
     <string name="about_version_with_build">version %1$s, build #%2$s</string>
@@ -672,7 +674,7 @@
     <string name="store_short_dev_desc">The self-hosted productivity platform that keeps you in control (dev preview version)</string>
     <string name="store_full_dev_desc">The self-hosted productivity platform that keeps you in control.\nThis is the official development version, featuring a daily sample of any new untested functionality, which may cause instability and data loss. The app is for users willing to test, and report bugs should they occur. Do not use it for your productive work!\n\nBoth the official dev and regular version are available on F-droid, and can be installed at the same time.</string>
 
-    <string name="prefs_category_dev">Dev</string>
+    <string name="prefs_category_dev"></string>
     <string name="dev_version_no_information_available">No info available.</string>
     <string name="dev_version_no_new_version_available">No new version available.</string>
     <string name="dev_version_new_version_available">New version available</string>
