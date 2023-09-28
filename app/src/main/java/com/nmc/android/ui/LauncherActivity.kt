@@ -39,7 +39,7 @@ class LauncherActivity : BaseActivity() {
     lateinit var appPreferences: AppPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        // Mandatory to call this before super method to show system launch screen for api level 31+ ok
+        // Mandatory to call this before super method to show system launch screen for api level 31+
         installSplashScreen()
 
         super.onCreate(savedInstanceState)
@@ -48,11 +48,11 @@ class LauncherActivity : BaseActivity() {
 
         setContentView(binding.root)
         //updateTitleVisibility()
-        //scheduleSplashScreen()
+        scheduleSplashScreen()
     }
 
     private fun updateTitleVisibility() {
-      /*  if (TextUtils.isEmpty(resources.getString(R.string.splashScreenBold))) {
+       /* if (TextUtils.isEmpty(resources.getString(R.string.splashScreenBold))) {
             binding.splashScreenBold.visibility = View.GONE
         }
         if (TextUtils.isEmpty(resources.getString(R.string.splashScreenNormal))) {
