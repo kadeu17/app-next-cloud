@@ -41,7 +41,7 @@
             android:textStyle="bold"
             android:visibility="gone"
             tools:ignore="RtlHardcoded"
-            tools:text="Nextcloud" />
+            tools:text="Drops2Africa" />
 
     </LinearLayout>
 
