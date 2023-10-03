@@ -322,6 +322,9 @@ public class SettingsActivity extends PreferenceActivity
                 preferenceCategoryAbout.removePreference(sourcecodePreference);
             }
         }
+
+        // Remove o item "Get source code"
+        preferenceCategoryAbout.removePreference(findPreference("sourcecode"));
     }
 
     private void setupMoreCategory() {
@@ -375,20 +378,18 @@ public class SettingsActivity extends PreferenceActivity
 
     private void setupLoggingPreference(PreferenceCategory preferenceCategoryMore) {
 
-        boolean loggerEnabled = getResources().getBoolean(R.bool.logger_enabled) || BuildConfig.DEBUG;
+        boolean loggerEnabled = getResources().getBoolean(R.bool.logger_enabled);
         Preference pLogger = findPreference("logger");
         if (pLogger != null) {
-            if (loggerEnabled) {
-                pLogger.setOnPreferenceClickListener(preference -> {
-                    Intent loggerIntent = new Intent(getApplicationContext(), LogsActivity.class);
-                    startActivity(loggerIntent);
-
-                    return true;
-                });
-            } else {
-                preferenceCategoryMore.removePreference(pLogger);
-            }
+            pLogger.setOnPreferenceClickListener(preference -> {
+                Intent loggerIntent = new Intent(getApplicationContext(), LogsActivity.class);
+                startActivity(loggerIntent);
+                return true;
+            });
         }
+
+        // Mover a remoção do item para fora do bloco de verificação
+        preferenceCategoryMore.removePreference(pLogger);
     }
 
 
@@ -420,10 +421,11 @@ public class SettingsActivity extends PreferenceActivity
                     return true;
 
                 });
-            } else {
-                preferenceCategoryMore.removePreference(pRecommend);
             }
         }
+
+        // remover recomendar
+        preferenceCategoryMore.removePreference(pRecommend);
     }
 
     private void setupE2EPreference(PreferenceCategory preferenceCategoryMore) {
@@ -580,6 +582,12 @@ public class SettingsActivity extends PreferenceActivity
     private void setupCalendarPreference(PreferenceCategory preferenceCategoryMore) {
         boolean calendarContactsEnabled = getResources().getBoolean(R.bool.davdroid_integration_enabled);
         Preference pCalendarContacts = findPreference("calendar_contacts");
+
+        if (pCalendarContacts != null) {
+            // Oculta o item "Sync Calendar & Contacts"
+            preferenceCategoryMore.removePreference(pCalendarContacts);
+        }
+
         if (pCalendarContacts != null) {
             if (calendarContactsEnabled) {
                 final Activity activity = this;
