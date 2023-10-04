@@ -36,7 +36,7 @@
         android:layout_gravity="center"
         android:layout_weight="1"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/logo" />
+        android:src="@drawable/nova_logo" />
 
     <ScrollView
         android:layout_width="0dp"
@@ -73,7 +73,7 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/host_url_input"
-                        android:layout_width="match_parent"
+                        android:layout_width="208dp"
                         android:layout_height="wrap_content"
                         android:gravity="top"
                         android:importantForAutofill="no"
@@ -110,7 +110,7 @@
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/auth_testing_connection"
                 android:drawablePadding="@dimen/alternate_half_padding"
-                android:gravity="center_vertical"
+                android:gravity="center"
                 android:minHeight="@dimen/display_text_min_height"
                 android:paddingStart="@dimen/standard_padding"
                 android:paddingTop="@dimen/standard_eight_padding"
@@ -118,7 +118,6 @@
                 android:paddingBottom="@dimen/standard_eight_padding"
                 android:text="@string/auth_testing_connection"
                 android:textColor="@color/login_text_color"
-                android:visibility="invisible"
                 app:drawableStartCompat="@android:drawable/stat_notify_sync" />
 
             <TextView
@@ -127,7 +126,7 @@
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/auth_unauthorized"
                 android:drawablePadding="@dimen/alternate_half_padding"
-                android:gravity="center_vertical"
+                android:gravity="center"
                 android:paddingStart="@dimen/standard_padding"
                 android:paddingTop="@dimen/standard_eight_padding"
                 android:paddingEnd="@dimen/standard_eight_padding"
@@ -142,7 +141,10 @@
                 android:layout_height="wrap_content"
                 android:background="@color/transparent"
                 android:contentDescription="@string/scanQR_description"
-                android:src="@drawable/qrcode_scan" />
+                android:visibility="invisible"
+                 />
+
+            <!--android:src="@drawable/qrcode_scan"-->
 
         </LinearLayout>
 
